@@ -2,114 +2,248 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-
 }
 
 header {
+  position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-  background-color: lightgray;
+  z-index: 900;
+
+
 }
-
+/*NAV BAR*/
 nav {
+  height: 9em;
   display: flex;
-  flex-direction: column-reverse;
-
+  flex-direction: column;
+  background-color: #071c31;
+  z-index: 100;
 }
 
 .top-nav {
-  padding: 2em 2.25em 0 2.25em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: 1px solid black;
-
+  height: 75px;
+  width: 100%;
 }
 
-.top-right {
-  display: flex;
-  justify-content: flex-end;
+.profile-nav {
+  float: right;
+  margin: 15px 30px 0 0;
+  position: relative;
+  width: 190px;
+  height: 40px;
+}
+
+.profile-icon {
+  position: absolute;
+  display: inline-block;
+}
+.admin {
+  color: #FFF;
+  position: absolute;
+  right: 35px;
+  display: inline-block;
+  font-size: 80%
+  color: #fbf7ea;
+}
+
+.drop-down {
+  position: absolute;
+  display: inline-block;
+  left: 125px;
+  margin-left: 40px;
 
 }
+/*nav bottom*/
+
 .bottom-nav {
-  border: 1px solid black;
-  border: 2px;
-  margin: 2em 2.25em 0 2.25em;
-  padding-bottom: 2em;
   display: flex;
-  align-items:flex-start;
-  justify-content: space-around;
-}
+ align-items: center;
+ justify-content: space-between;
 
-.bottom-left {
+}
+.logo-div {
+
+
+}
+.links {
+  display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding-bottom: 8em;
+}
+.links li {
   display: flex;
   align-items: center;
-  padding-right: 65em;
-  margin-left: 1em;
+  margin-right: 40px;
+
+}
+.links img {
+  height: 3em;
+  width: 3em;
+
+}
+.links a {
+  color: #fbf7ea;
+  font-size: 1.25em;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
-.bottom-right {
-  display: flex;
-  align-items: flex-end;
+#shares a {
+  color: #7f7f7f;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
-.icons {
-  margin-right: 1.75em;
+/*NAV BAR- bottom right*/
+
+
+.b {
+
+}
+.badass {
+  color: gray;
+  padding: 0 2em 2em 0;
 }
 
+
+
+
+
+
+
+/*H1-title-Shares*/
 h1 {
   margin: 1em 0em .5em 1.7em;
-
 }
 
-
-
+/*CARDS CONTAINER*/
 .main {
-  margin 0;
+  min-height: 100vh;
+  padding-top: 12em;
+  background-color: #F0F0F0;
 }
 
 h2 {
-  margin: 1em 0em .5em 1.7em;
+  margin: 0em 1em 1em 1.7em;
 }
 
 .cards {
-  width: 100%auto;
+  width: 100% auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
-
   margin: 0;
-  margin-left: .5em;
-  margin-right: .5em;
-
+  margin-left: .75em;
+  margin-right: .75em;
 }
-
+/*INDIVIDUAL CARDS*/
 .card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
-  width: 21.5em;
-  box-shadow: 0em .2em .3em  rgba(0, 0, 0, 0.4);
+  margin-bottom: 2em;
+  width: 20em;
+  box-shadow: 0em .3em .4em  rgba(0, 0, 0, 0.5);
 }
 
+.hidden {
+  display: hidden;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/*Card- Top Image Section*/
 .arrow {
   width: 3.5em;
   height: 3.5em;
-  padding: .75em;
+  padding: .5em;
   margin: .5em;
-  border-radius: 100%;
-  background-color: #FFF;
-  background-image: url(assets/forward-arrow.svg);
 }
 
 .top-image {
-  background-color: gray;
   position: relative;
+  height: 22vh;
 }
 
+/*BADASS WOMEN*/
+#serena {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/serena-williams.jpg);
+  background-size: cover;
+}
+#serena:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/serena-williams2.jpg);
+}
+
+#emily {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/emily-harrington.jpg);
+  background-size: cover;
+}
+#emily:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/emily-harrington2.jpg);
+    background-position: 0% 80%;
+
+}
+
+#kerri-misty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/kerri-misty.jpg);
+  background-size: cover;
+  background-position: 0% 10%;
+}
+#kerri-misty:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kerri-misty2.jpg);
+}
+
+#bethany {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/bethany-hamilton.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#bethany:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/bethany-hamilton2.jpg);
+}
+#ingrid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/ingrid-backstrom2.jpg);
+    background-size: cover;
+  background-position: bottom;
+}
+#ingrid:hover {
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/ingrid-backstrom.jpg);
+}
+
+#jenn {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/jenn-shelton.jpg);
+    background-size: cover;
+  background-position: center;
+}
+#jenn:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jenn-shelton2.jpg);
+  background-position: 0 10%;
+
+}
+
+#allyson {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/allyson-felix.jpg);
+    background-size: cover;
+}
+#allyson:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/allyson-felix2.jpg);
+}
+
+#jessie {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/jessie-graff.jpg);
+    background-size: cover;
+  background-position: 100% 10%;
+}
+#jessie:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jessie-graff2.jpg);
+  background-position: 0% 30%;
+
+}
+
+/*Card- Bottom*/
 .views-box {
   position: absolute;
   right: .75em;
@@ -119,10 +253,16 @@ h2 {
 
 .views {
   font-size: .5em;
+  color: #fff;
 }
 
 .big-number {
   font-size: 1.75em;
+  color: #fff;
+}
+.big-number2 {
+  font-size: 1.75em;
+
 }
 
 .card-main {
@@ -133,16 +273,26 @@ h2 {
 h3 {
   line-height: 1.5em;
 }
+h4 {
+  font-style: italic;
+}
+.name-font {
+  font-size: 1.25em;
+}
+#kw-mmt-font {
+  font-size: 1.03em;
+  line-height: 2em;
+}
 .time-stamp {
   font-size: .75em;
   margin-bottom: 1em;
 
 }
 .link-box{
-  /*border: 1px solid black;*/
-  background-color: lightgray;
   padding: .15em;
   margin-bottom: 1em;
+  background-color: #d1d1d1;
+
 }
 
 .card-link {
@@ -151,6 +301,15 @@ h3 {
 .link {
   text-decoration: none;
   font-size: .75em;
+  overflow: hidden;
+  text-overflow: clip ellipsis;
+  white-space: initial;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-decoration: none;
+  color: #3c485b;
+
 }
 
 .playlist {
@@ -167,5 +326,13 @@ h4 {
 .attachments {
   margin-top: 1em;
   margin-bottom: 0;
-
 }
+
+footer {
+  height: 85px;
+  background-color: #071c31;
+}
+
+
+
+/*MEDIA QUERIES*/
