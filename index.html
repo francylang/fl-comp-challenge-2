@@ -5,28 +5,41 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="normalize.css"
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <header>
       <nav>
-        <div class="top-nav">
-          <div class="top-right">
-            <a href="#">drop-down menu</a>
-          </div>
-        </div>
-        <div class="bottom-nav">
-          <div class ="bottom-left">
-            <a class="icons" href="#"> Icon One </a>
-            <a class="icons" href="#"> Icon Two </a>
-            <a class="icons" href="#"> Icon Three </a>
-          </div>
-         <div class="bottom-right">
-            <p>logo</p>
-         </div>
-        </div>
-      </nav>
+        <article class="top-nav">
+          <aside class="profile-nav">
+              <img class="profile-icon" src="assets/user.svg" alt=" " width="20em" height="20em">
+              <p class="admin">Admin Username</p>
+              <img class="drop-down" src="assets/drop-down-arrow.svg" width="20em" height="20em">
+            </div>
+</article>
+
+        <article class ="bottom-nav">
+            <ul class="links">
+              <li class="icon">
+                <img src="assets/fitness-woman.svg" class="pink-runner">
+                <a class="icons" id="shares" href="#">Endurance</a>
+              <li class="icon">
+                <img src="assets/push-up.png" class="pink-runner">
+                <a class="icons" id="shares" href="#">Power</a>
+              <li class="icon">
+                <img src="assets/fitness-woman-power.svg" class="pink-runner">
+                <a class="icons" id="shares" href="#">Strength</a>
+            </ul>
+          <div class="logo-div">
+            <p class="badass"><span class="b">B</span>ADASS IS <span class="b">B</span>EAUTIFUL</p>
+
+      </div>
+    </article>
+
+     </nav>
+
     </header>
 
     <section class="main">
@@ -34,9 +47,9 @@
 
      <section class="cards">
 
-      <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+      <article class="card" id="1">
+         <div class="top-image" id="serena">
+           <img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -45,31 +58,31 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font">Serena Williams</h3>
+           <p class="time-stamp">Professional Tennis Player</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">https://www.serenawilliams.com</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>Who Runs the World?</h3>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
-      <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+      <article class="card" id ="2">
+         <div class="top-image" id="emily">
+           <img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -78,31 +91,31 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font">Emily Harrington</h3>
+           <p class="time-stamp">Professional Rock Climber</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">http://emilyharrington.com/</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>Do Epic Shit</h4>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
       <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+         <div class="top-image" id="kerri-misty">
+           <img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -111,31 +124,31 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font" id="kw-mmt-font">Kerri Walsh and Misty May-Treanor</h3>
+           <p class="time-stamp">Olympic Gold Medalists</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">http://www.teamusa.org/usa-volleyball/athletes/</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>We Can and We Will</h4>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
       <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+         <div class="top-image" id="bethany">
+           <img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -144,31 +157,31 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font">Bethany Hamilton</h3>
+           <p class="time-stamp">Professional Surfer</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">http://bethanyhamilton.com/</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>Brave Enough to Try</h4>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
       <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+         <div class="top-image" id="ingrid">
+           <img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -177,31 +190,31 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font">Ingrid Backstrom</h3>
+           <p class="time-stamp">Professional Skier</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">http://www.ingridbackstrom.com/</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>Do it on Purpose</h4>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
       <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+         <div class="top-image" id="jenn">
+           <img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -210,31 +223,31 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font">Jenn Shelton</h3>
+           <p class="time-stamp">Ultramarathoner</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">http://www.jennshelton.com/</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>Run Your Own Race</h4>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
       <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+         <div class="top-image" id="allyson">
+           <img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -243,31 +256,31 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font">Allyson Felix</h3>
+           <p class="time-stamp">Olympic and World Champion</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">http://www.allysonfelix.com/</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>Run Like a Girl</h4>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
       <article class="card">
-         <div class="top-image">
-          <img class="arrow" src="assets/forward-arrow.svg">
+         <div class="top-image" id="jessie">
+<img class="arrow" src="assets/heart-beat-black.svg">
           <div class="views-box">
             <p class="views">VIEWS</p>
             <p class="big-number">05</p>
@@ -276,32 +289,61 @@
 
         <div class="card-main">
           <div class="name">
-           <h3>Francy Lang</h3>
-           <p class="time-stamp">Monday 01/23/16 10:22am</p>
+           <h3 class="name-font">Jessie Graff</h3>
+           <p class="time-stamp">Professional Stunt Woman</p>
           </div>
 
           <div class="link-box">
            <div class="card-link">
-             <a class="link" href="link">www.francyisawesome.com</a>
+             <a class="link" href="link">http://www.jessiegraff.com/</a>
            </div>
           </div>
 
           <div class="playlist">
             <h3>PLAYLIST</h3>
-            <h4>Name of Playlist</h3>
+            <h4>Take Notes</h4>
           </div>
 
           <div class="attachments">
             <h3>ATTACHMENTS</h3>
-            <p class="big-number">04</p>
+            <p class="big-number2">04</p>
           </div>
         </div>
       </article>
 
+            <article class="card hidden">
+
+            </article>
+
+            <article class="card hidden">
+
+            </article>
+
+            <article class="card hidden">
+
+            </article>
+
+            <article class="card hidden">
+
+            </article>
 
  <!--DONT FORGET GHOST CARD -->
 
-     </section>
 
+     </section>
+     <footer>
+          <article class="social-media">
+            <div class="twitter">
+              <a  href="#"></a>
+            </div>
+            <div class="google-plus">
+                <a href="#"></a>
+            </div>
+            <div class="facebook">
+              <a href="#"></a>
+            </div>
+          </article>
+
+        </footer>
   </body>
 </html>
