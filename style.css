@@ -8,15 +8,25 @@ header {
   position: fixed;
   width: 100%;
   z-index: 900;
+}
 
+h1 {
+  margin-bottom: 5px;
+  color: #525252 ;
+  display: flex;
+}
 
+.logo-div {
+  display: flex;
+  font-size: 1em;
+  color: #F0F0F0;
 }
 /*NAV BAR*/
 nav {
   height: 9em;
   display: flex;
   flex-direction: column;
-  background-color: #071c31;
+  background-color: #D81159;
   z-index: 100;
 }
 
@@ -38,12 +48,11 @@ nav {
   display: inline-block;
 }
 .admin {
-  color: #FFF;
+  color: #D3D3D3;
   position: absolute;
   right: 35px;
   display: inline-block;
-  font-size: 80%
-  color: #fbf7ea;
+  font-size: 100%
 }
 
 .drop-down {
@@ -56,7 +65,7 @@ nav {
 /*nav bottom*/
 
 .bottom-nav {
-  display: flex;
+ display: flex;
  align-items: center;
  justify-content: space-between;
 
@@ -67,27 +76,26 @@ nav {
 }
 .links {
   display: flex;
-   align-items: center;
-   justify-content: flex-start;
-   padding-bottom: 8em;
+  align-items: center;
+  justify-content: flex-start;
 }
 .links li {
   display: flex;
   align-items: center;
   margin-right: 40px;
-
 }
+
 .links img {
+  display: flex;
   height: 3em;
   width: 3em;
-
 }
 .links a {
-  color: #fbf7ea;
-  font-size: 1.25em;
+  color: #D3D3D3;
+  font-size: 1em;
   text-decoration: none;
-  align-items: center;
   justify-content: center;
+
 }
 
 #shares a {
@@ -103,17 +111,14 @@ nav {
 
 }
 .badass {
-  color: gray;
-  padding: 0 2em 2em 0;
+  color: #D3D3D3 ;
+  font-size: 2em;
+  padding: 0 1em 0em 1em;
 }
 
 
 
 
-
-
-
-/*H1-title-Shares*/
 h1 {
   margin: 1em 0em .5em 1.7em;
 }
@@ -122,11 +127,11 @@ h1 {
 .main {
   min-height: 100vh;
   padding-top: 12em;
-  background-color: #F0F0F0;
+  background-color: #D3D3D3;
 }
 
 h2 {
-  margin: 0em 1em 1em 1.7em;
+  margin: 0em 1em .75em 1.7em;
 }
 
 .cards {
@@ -138,6 +143,8 @@ h2 {
   margin: 0;
   margin-left: .75em;
   margin-right: .75em;
+  margin-top: .75em;
+  margin-bottom: 1.5em;
 }
 /*INDIVIDUAL CARDS*/
 .card {
@@ -146,7 +153,10 @@ h2 {
   margin-bottom: 2em;
   width: 20em;
   box-shadow: 0em .3em .4em  rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+
 }
+
 
 .hidden {
   display: hidden;
@@ -171,9 +181,11 @@ h2 {
 #serena {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/serena-williams.jpg);
   background-size: cover;
+
 }
 #serena:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/serena-williams2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/serena-williams.jpg);
+
 }
 
 #emily {
@@ -181,8 +193,7 @@ h2 {
   background-size: cover;
 }
 #emily:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/emily-harrington2.jpg);
-    background-position: 0% 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/emily-harrington.jpg);
 
 }
 
@@ -192,7 +203,9 @@ h2 {
   background-position: 0% 10%;
 }
 #kerri-misty:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kerri-misty2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kerri-misty.jpg);
+    background-position: 0% 10%;
+
 }
 
 #bethany {
@@ -202,7 +215,9 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(a
 }
 
 #bethany:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/bethany-hamilton2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/bethany-hamilton.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 #ingrid {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/ingrid-backstrom2.jpg);
@@ -210,7 +225,9 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(a
   background-position: bottom;
 }
 #ingrid:hover {
-background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/ingrid-backstrom.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/ingrid-backstrom2.jpg);
+background-size: cover;
+background-position: bottom;
 }
 
 #jenn {
@@ -219,8 +236,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(a
   background-position: center;
 }
 #jenn:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jenn-shelton2.jpg);
-  background-position: 0 10%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jenn-shelton.jpg);
 
 }
 
@@ -229,7 +245,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(a
     background-size: cover;
 }
 #allyson:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/allyson-felix2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/allyson-felix.jpg);
 }
 
 #jessie {
@@ -238,8 +254,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(a
   background-position: 100% 10%;
 }
 #jessie:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jessie-graff2.jpg);
-  background-position: 0% 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jessie-graff.jpg);
+  background-position: 100% 10%;
 
 }
 
@@ -258,7 +274,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(a
 
 .big-number {
   font-size: 1.75em;
-  color: #fff;
+  color: #D3D3D3;
 }
 .big-number2 {
   font-size: 1.75em;
@@ -330,9 +346,106 @@ h4 {
 
 footer {
   height: 85px;
-  background-color: #071c31;
+  background-color: #D81159 ;
 }
 
 
 
 /*MEDIA QUERIES*/
+
+@media(max-width: 320px) {
+
+header {
+  margin: 0;
+}
+
+.main {
+  padding-top: 11em;
+}
+  .logo-div {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap-reverse;
+  font-size: 1em;
+  color: #F0F0F0;
+  }
+
+h2 {
+  display: none;
+}
+.cards {
+
+}
+.hidden {
+  display: none;
+}
+.links img {
+  display: flex;
+  height: 2.5em;
+  width: 2.5em;
+  margin-top: 1.5em;
+  margin-left: .5em;
+ }
+
+.pink-runner {
+  margin-left: .5em;
+}
+
+.top-nav {
+  margin-left: 1.25em;
+}
+.icons {
+  display: none;
+}
+
+.admin {
+  display: none;
+}
+.profile-icon {
+  display: none
+}
+.drop-down {
+  margin-top: 0;
+}
+.top-nav {
+  margin-top: 0;
+}
+
+@media(max-width: 550px) {
+  h2 {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+
+  .admin {
+    display: none;
+  }
+  .profile-icon {
+    display: none
+  }
+  .drop-down {
+    margin-top: 0;
+  }
+  .top-nav {
+    margin-top: 0;
+  }
+}
+
+
+
+@media(max-width: 970px) {
+
+}
+
+@media(max-width: 1070px) {
+
+}
+
+@media(max-width: 1450px) {
+
+}
+@media(max-width: 1800px) {
+
+}
